@@ -1,7 +1,9 @@
-tmp
+tmp/
+*.tmp
 .env
 .envrc
 bin/
+build-errors.log
 
 # Logs
 logs

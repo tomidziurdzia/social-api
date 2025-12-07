@@ -25,7 +25,6 @@ func (app *application) mount() http.Handler {
   	r.Use(middleware.Logger)
   	r.Use(middleware.Recoverer)
 
-
 	r.Route("/v1", func(r chi.Router) {
 		r.Get("/health", app.healthcheckHandler)
 	})
